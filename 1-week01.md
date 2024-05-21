@@ -103,4 +103,10 @@ vim .ssh/config
 
 ## easy ssh 
 ssh mlops-zoomcamp 
+
+## memory error using DictVectorizer
+
+Quote from a student 
+
+"Hello, i've just submitted the first homework. One thing that i thought it worth mentioning for others running experiments on local environment: this first exercise required me to raise WSL memory to 24Gb because of DictVectorizer + fitting the model. If your kernel dies during cell execution, then this is probably the case."
 ```
