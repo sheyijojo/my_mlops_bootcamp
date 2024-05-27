@@ -3,6 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Ignore AWS configuration files
+aws-config.yml
+aws-credentials.env
+
+# Ignore environment files
+.env
+
+
 # C extensions
 *.so
 
