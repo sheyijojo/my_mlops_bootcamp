@@ -77,7 +77,7 @@ resource "aws_security_group" "ec2_security_group4" {
   }
 
   tags = {
-    Name = "jenkins server security group"
+    Name = "mlops zoomcamp SG"
   }
 }
 
@@ -103,14 +103,17 @@ data "aws_ami" "ubuntu" {
 # launch the ec2 instance
 resource "aws_instance" "ec2_instance" {
   ami                    = data.aws_ami.ubuntu.id
-  instance_type          = "t2.small"
+  instance_type          = "t2.xlarge"
   subnet_id              = aws_default_subnet.default_az1.id
   vpc_security_group_ids = [aws_security_group.ec2_security_group4.id]
-  key_name               = "cloudconvokey" #change this
-  user_data              = file("install_jenkins.sh")
+  key_name               = "mlops_key"
+  ##user_data              = file("install_docker.sh")
+  root_block_device{
+    volume_size = 30 #30GB storage
+  }
 
   tags = {
-    Name = "jenkins_server"
+    Name = "mlops_ubuntu_server"
   }
 }
 
@@ -118,5 +121,5 @@ resource "aws_instance" "ec2_instance" {
 
 # print the url of the jenkins server
 output "website_url" {
-  value = join("", ["http://", aws_instance.ec2_instance.public_ip, ":", "8080"])
+  value = join("", ["http://", aws_instance.ec2_instance.public_ip, ":", "80"])
 }
