@@ -3,6 +3,18 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore other Terraform generated files
+*.tfplan
+*.tfout
+
+
 # Ignore AWS configuration files
 aws-config.yml
 aws-credentials.env
