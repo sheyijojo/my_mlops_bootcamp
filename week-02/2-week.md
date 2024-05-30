@@ -21,7 +21,7 @@ pip install or requirements.txt
 ## create mloflow env
 conda create -n <env-name>
 
-conda create -n mlflow
+conda create -n mlflow python=3.9
 
 # To activate this environment, use
 
@@ -77,21 +77,39 @@ Tip 2: don't modify the hyperparameters of the model to make sure that the train
 What is the value of the min_samples_split parameter:
 ```
 ```md
+
+## choose your env kernel
+
+mlflow kernel3 python is mine 
 ## setting up mlflow
 
-run the requirements
+pip install -r requirements
 
-## congifure backend to prevent fails
-mlflow ui --backend-store-uri sqlite / ://mflow.db
+## congifure backend to prevent fails, just for experiments
+!mlflow ui --backend-store-uri sqlite:///mflow.db
 
 ## copy output
 copy output and place in a browser
+http://127.0.0.1:5000
 
+##
 import mlflow  
 
 mlfow.set_tracking_uri("sqlite://mflow.db")
 
-mlflow.set_experiemrent("my-brand-new-experiment")
+mlflow.set_experiment("my-brand-new-experiment")
 
 run it 
 ```
+
+## debugging
+```md
+pip show scikit-learn
+
+pip install scikit-learn==<desired_version>
+
+
+```
+
+![ssh config](https://github.com/sheyijojo/my_mlops_bootcamp/blob/main/assets/exp-001.png?raw=true)
+

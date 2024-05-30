@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/my_mlops_bootcamp/week-02/mlruns/0/dd985d74f7664899b9c8ca7e43a16962/artifacts
+end_time: 1717102399317
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dd985d74f7664899b9c8ca7e43a16962
+run_name: auspicious-pug-750
+run_uuid: dd985d74f7664899b9c8ca7e43a16962
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717102387484
+status: 4
+tags: []
+user_id: codespace
