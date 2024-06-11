@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/my_mlops_bootcamp/mlruns/0/0bcec776835f41b5a50fabf8321a9368/artifacts
+end_time: 1717793134394
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0bcec776835f41b5a50fabf8321a9368
+run_name: redolent-mink-702
+run_uuid: 0bcec776835f41b5a50fabf8321a9368
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717793122731
+status: 4
+tags: []
+user_id: codespace

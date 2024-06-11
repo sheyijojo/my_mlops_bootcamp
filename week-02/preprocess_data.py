@@ -6,7 +6,7 @@ import pandas as pd
 
 from sklearn.feature_extraction import DictVectorizer
 
-
+## This function opens a file in binary write mode ("wb") and uses pickle.dump to serialize the given object (obj) into the file specified by filename.
 def dump_pickle(obj, filename: str):
     with open(filename, "wb") as f_out:
         return pickle.dump(obj, f_out)

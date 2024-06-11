@@ -46,6 +46,7 @@ mlflow --version
 
 ## run the script 
 python preprocess_data.py --raw_data_path <TAXI_DATA_FOLDER> --dest_path ./output
+python preprocess_data.py --raw_data_path TAXI_DATA_FOLDER --dest_path ./output
 ```
 ## Q3    - Train the model
 
@@ -62,6 +63,8 @@ calculate the RMSE score on the validation set.
 
 
 ## Task 
+```md
+
 Q3. Train a model with autolog
 We will train a RandomForestRegressor (from Scikit-Learn) on the taxi dataset.
 
@@ -73,7 +76,7 @@ Your task is to modify the script to enable autologging with MLflow, execute the
 Tip 1: don't forget to wrap the training code with a with mlflow.start_run(): statement as we showed in the videos.
 
 Tip 2: don't modify the hyperparameters of the model to make sure that the training will finish quickly.
-
+```
 What is the value of the min_samples_split parameter:
 ```
 ```md

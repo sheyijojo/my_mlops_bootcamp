@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/my_mlops_bootcamp/mlruns/0/e43589feafbf4611b2f6332c376d42c4/artifacts
+end_time: 1717792362219
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e43589feafbf4611b2f6332c376d42c4
+run_name: rare-bird-262
+run_uuid: e43589feafbf4611b2f6332c376d42c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717792362209
+status: 4
+tags: []
+user_id: codespace

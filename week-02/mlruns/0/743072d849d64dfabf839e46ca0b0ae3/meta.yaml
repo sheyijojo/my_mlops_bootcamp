@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/my_mlops_bootcamp/mlruns/0/743072d849d64dfabf839e46ca0b0ae3/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 743072d849d64dfabf839e46ca0b0ae3
+run_name: mysterious-bird-422
+run_uuid: 743072d849d64dfabf839e46ca0b0ae3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717792418443
+status: 1
+tags: []
+user_id: codespace
