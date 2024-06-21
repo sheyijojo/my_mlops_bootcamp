@@ -8,8 +8,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 from mlflow.sklearn import autolog
 
-#mlflow.sklearn.autolog(disable=True)
-#mlflow.autolog()
+# mlflow.sklearn.autolog(disable=True)
+# mlflow.autolog()
 with mlflow.start_run(): 
 
 
@@ -23,7 +23,7 @@ with mlflow.start_run():
         @click.command()
         @click.option(
                 "--data_path",
-                default="./output",
+                default="./week-02/output",
                 help="Location where the processed NYC taxi trip data was saved"
         )
         def run_train(data_path: str):

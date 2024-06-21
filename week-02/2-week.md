@@ -41,7 +41,7 @@ mlflow --version
 
 ```md
 ## preprocess the data 
-- download three files including Green tripdata for Jan, Feb, March 2023 and store in a folder called Taxii_data_folder 
+- download three files including Green tripdata for Jan, Feb, March 2023 and store in a folder called Taxi_data_folder 
 
 
 ## run the script 
